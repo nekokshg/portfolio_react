@@ -1,0 +1,16 @@
+@import './variables.css';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(216, 151, 247);
+    color: black; /* Ensures black text remains readable */
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling issues with fixed backgrounds */
+  }
