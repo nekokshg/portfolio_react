@@ -1,0 +1,81 @@
+/* Default: Large screens (above 1020px) */
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 40vw; /* Navbar takes 40% of the screen */
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+/* Navbar Header */
+.navbar-header {
+
+    margin-bottom: 30px;
+}
+
+.navbar-header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.navbar-header h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Navigation Links Container */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    gap: 15px; /* Space between links */
+}
+/* ✅ Navigation Item (Checkbox + Link) */
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between checkbox and text */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* ✅ Checkbox Style */
+.nav-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #A68CFF; /* Soft Violet */
+    border: 2px solid #C7B8FF;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* ✅ Checked Checkbox - Stays Focused */
+.nav-item input[type="checkbox"]:checked {
+    transform: scale(1.1);
+}
+
+/* ✅ Navigation Links */
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* ✅ Navigation Links Hover */
+.nav-link:not(.active):hover {
+    color: #A5B4FF; /* Soft Periwinkle */
+    transform: scale(1.05);
+}
+
+/* ✅ Active Section - Strikethrough */
+.nav-link.active {
+    color: #8EA2FF;
+    font-weight: bold;
+    text-decoration: line-through;
+}

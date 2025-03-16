@@ -1,0 +1,40 @@
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-category {
+    flex: 1 1 300px;
+}
+
+.skill-category h4 {
+    color: #A5B4FF;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-badge {
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.skill-badge:hover {
+    cursor: pointer;
+    background: #A5B4FF;
+    color: #1A1A1A;
+}

@@ -1,0 +1,27 @@
+@import './styles/variables.css';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+display: flex;
+height: 100vh; /* Ensure it takes full height */
+width: 100vw; /* Ensure it takes full width */
+}
+
+/* ✅ Content now expands to fill the available space */
+.content {
+    flex-grow: 1; /* Fills all remaining space */
+    margin-left: 80px; /* Matches navbar width */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}

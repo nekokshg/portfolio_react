@@ -7,13 +7,13 @@ const FadeIn = ({ children, delay = 0.03, duration = 0.4, trigger }) => {
 
   useEffect(() => {
     if (startAnimation) {
-      const chars = textRef.current.querySelectorAll("span.char");
+      const chars = textRef.current.querySelectorAll("span.char"); //Select each character
       gsap.fromTo(
         chars,
         { opacity: 0 },
         {
           opacity: 1,
-          stagger: delay,
+          stagger: delay, //Staggers fade-in per character
           duration: duration,
           ease: "power2.out",
         }

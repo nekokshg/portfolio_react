@@ -6,23 +6,22 @@
     height: 100vh;
   
     background: 
-        radial-gradient(circle at 98% -8%, rgba(255, 249, 254, 0.8), transparent 30%), /* Softer Misty White */
-        radial-gradient(circle at 95% -15%, rgba(207, 113, 192, 0.6), transparent 40%), /* Soft Magenta Glow */
+        radial-gradient(circle at 85% -5%, rgba(238, 130, 238, 0.6), transparent 30%), /* Violet */
+        radial-gradient(circle at 80% -10%, rgba(186, 85, 211, 0.5), transparent 40%), /* Medium Orchid */
         
-        radial-gradient(circle at 30% -10%, rgba(255, 99, 133, 0.9), transparent 60%), /* Vibrant Salmon Pink */
-        radial-gradient(circle at 60% -5%, rgba(255, 140, 170, 0.7), transparent 50%), /* Rich Warm Pink */
-        radial-gradient(circle at 40% 10%, rgba(255, 183, 197, 0.7), transparent 50%), /* Soft Pink */
-        radial-gradient(circle at 70% 15%, rgba(255, 228, 225, 0.6), transparent 50%), /* Light Salmon */
-        radial-gradient(circle at 50% 20%, rgba(250, 240, 250, 0.5), transparent 50%), /* Misty White */
-        radial-gradient(circle at 80% 25%, rgba(220, 160, 250, 0.4), transparent 50%), /* Soft Purple Glow */
-        radial-gradient(circle at 10% 20%, rgba(255, 140, 170, 0.5), transparent 50%), /* Soft Pink on Left for Balance */
+        radial-gradient(circle at 40% -10%, rgba(148, 0, 211, 0.6), transparent 60%), /* Dark Violet */
+        radial-gradient(circle at 60% 0%, rgba(75, 0, 130, 0.5), transparent 50%), /* Indigo */
         
-        radial-gradient(circle at 30% 30%, rgba(240, 200, 255, 0.3), transparent 50%), /* Light Lavender */
+        radial-gradient(circle at 50% 20%, rgba(64, 224, 208, 0.4), transparent 50%), /* Turquoise */
+        radial-gradient(circle at 70% 25%, rgba(72, 209, 204, 0.3), transparent 50%), /* Medium Turquoise */
         
-        radial-gradient(circle at 0% 80%, rgba(114, 21, 180, 0.7), transparent 40%), /* Deep Purple Glow */
-        radial-gradient(circle at 0% 85%, rgba(180, 21, 172, 0.7), transparent 30%); /* Lowered for Depth */
-      
-    z-index: -1;
+        radial-gradient(circle at 10% 70%, rgba(32, 178, 170, 0.4), transparent 50%), /* Light Sea Green */
+        radial-gradient(circle at 0% 80%, rgba(0, 139, 139, 0.3), transparent 50%), /* Dark Cyan */
 
-  }
-  
+        radial-gradient(circle at 95% 95%, rgba(135, 206, 250, 0.18), transparent 60%), /* Soft Sky Blue */
+        radial-gradient(circle at 92% 98%, rgba(64, 224, 208, 0.2), transparent 65%), /* Neon Aqua */
+
+        linear-gradient(135deg, #1B0035 0%, #220054 100%);
+    
+    z-index: -1;
+}
