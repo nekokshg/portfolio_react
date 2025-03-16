@@ -10,7 +10,7 @@
 
 .skill-category h4 {
     color: #A5B4FF;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -31,6 +31,9 @@
     font-weight: bold;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+    border: 1px solid rgba(160, 160, 160, 0.5); /* Soft border */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
 .skill-badge:hover {

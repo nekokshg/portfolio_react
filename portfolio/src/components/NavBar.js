@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../styles/navbar.css";
 import NavLinkWithCheckbox from "./NavLinkWithCheckbox.js";
+import githubIcon from "../assets/github.svg";
+import linkedinIcon from "../assets/linkedin.svg";
 
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState("about");
@@ -38,13 +40,26 @@ const Navbar = () => {
                 <h1>Nicole Kaneshige</h1>
                 <h3>Software Engineer</h3>
             </div>
+            
+            {/* ✅ Stacked Navigation Links */}
             <div className="nav-links">
                 <NavLinkWithCheckbox sectionId="about" sectionName="About" activeSection={activeSection} />
                 <NavLinkWithCheckbox sectionId="skills" sectionName="Skills" activeSection={activeSection} />
                 <NavLinkWithCheckbox sectionId="projects" sectionName="Projects" activeSection={activeSection} />
+            </div>
+
+            {/* ✅ Social Media Buttons at the Bottom */}
+            <div className="nav-buttons">
+                <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer" className="nav-button">
+                    <img src={githubIcon} alt="GitHub" className="social-icon" />
+                </a>
+                <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer" className="nav-button">
+                    <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
+                </a>
             </div>
         </nav>
     );
 };
 
 export default Navbar;
+

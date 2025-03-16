@@ -1,22 +1,32 @@
 import React from "react";
 import Section from "../components/Section";
+import "../styles/about.css";
+import downloadIcon from "../assets/download.png";
 const About = () => {
     return (
         <Section id="about">
-            <p>
-                Welcome! I’m Nicole, a software developer with a focus on building 
-                efficient and reliable solutions. I enjoy working on challenging projects 
-                and continuously improving my skills in software development.
-            </p>
-            <p>
-                I’m currently pursuing a <strong>Master’s in Computer Science at Georgia Tech</strong> (online) 
-                and previously earned my <strong>Bachelor’s in Computer Science</strong> (with a minor in Mathematics) 
-                from UNLV, graduating Magna Cum Laude.
-            </p>
-            <p>
-            Outside of coding, I have a passion for game development and drawing, which allow me to combine creativity 
-            with problem-solving in unique ways.
-            </p>
+        <div className="aboutContainer">
+        <h3>About</h3>
+        <p>
+            <strong>Welcome! I'm Nicole, a passionate software developer dedicated to crafting efficient and reliable solutions.</strong> 
+            I thrive on solving complex problems, building scalable software, and continuously refining my skills to stay ahead in the ever-evolving tech world.
+        </p>
+
+        <p>
+            I'm currently pursuing a <strong>Master’s in Computer Science at Georgia Tech (online)</strong> while leveraging my strong academic foundation 
+            from the <strong>University of Nevada - Las Vegas</strong>, where I graduated <strong>Magna Cum Laude</strong> with a 
+            <strong> Bachelor’s in Computer Science</strong> and a <strong>minor in Mathematics</strong>.
+        </p>
+
+        <p>
+            Beyond coding, I have a passion for <strong>game development and digital art</strong>, allowing me to merge creativity 
+            with technology in unique and exciting ways.
+        </p>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
+            View Resume
+            <img src={downloadIcon} alt="Download Icon" className="button-icon" />
+        </a>
+        </div>
         </Section>
     );
 };

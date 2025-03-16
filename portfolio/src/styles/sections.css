@@ -2,7 +2,7 @@
 .section {
   margin-left: 40vw; /* Push content to the right, making room for navbar */
   flex-grow: 1; /* Allows the section to expand dynamically */
-  padding-top: 8vh; /* Keeps consistent top spacing */
+  padding-top: 10vh; /* Keeps consistent top spacing */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

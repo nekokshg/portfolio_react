@@ -1,4 +1,4 @@
-/* Default: Large screens (above 1020px) */
+/* ✅ Navbar - Positions Buttons at the Bottom, but Visible */
 .navbar {
     position: fixed;
     left: 0;
@@ -7,55 +7,72 @@
     height: 100vh; /* Full height */
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
     padding: 30px;
 }
 
-/* Navbar Header */
 .navbar-header {
-
-    margin-bottom: 30px;
+    margin-top: 7vh;
 }
 
-.navbar-header h1 {
-    font-size: 40px;
-    margin: 0;
-}
-
-.navbar-header h3 {
-    font-size: 18px;
-    margin: 5px 0;
-}
-
-/* Navigation Links Container */
+/* ✅ Navigation Links Container (Stacked Vertically) */
 .nav-links {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
-    gap: 15px; /* Space between links */
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 8vh;;
 }
-/* ✅ Navigation Item (Checkbox + Link) */
+
+/* ✅ Navigation Item - Aligns Checkboxes & Text */
 .nav-item {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between checkbox and text */
+    gap: 10px;
     transition: transform 0.2s ease-in-out;
 }
 
-/* ✅ Checkbox Style */
+/* ✅ Checkbox Style - Square & Glowing */
 .nav-item input[type="checkbox"] {
     width: 18px;
     height: 18px;
     cursor: pointer;
-    accent-color: #A68CFF; /* Soft Violet */
-    border: 2px solid #C7B8FF;
-    background-color: transparent;
-    transition: all 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    appearance: none; /* Removes default styling */
+    border: 1px solid white; /* Neon pink border */
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    backdrop-filter: blur(8px); /* Frosted effect */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-/* ✅ Checked Checkbox - Stays Focused */
+/* ✅ Custom Checkmark */
+.nav-item input[type="checkbox"]:checked::after {
+    content: "✔"; /* Unicode checkmark */
+    font-size: 14px;
+    color: #FF8DFF; /* Brighter pink checkmark */
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ✅ Checked Checkbox - No Flash */
 .nav-item input[type="checkbox"]:checked {
     transform: scale(1.1);
+    border-color: #FF8DFF;
+    background: rgba(255, 100, 255, 0.3);
+}
+
+/* ✅ Prevent Bright Flash on Click */
+.nav-item input[type="checkbox"]:active {
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+/* ✅ Hover Glow Effect (When Hovering Checkbox or Link) */
+.nav-item:hover input[type="checkbox"],
+.nav-link:hover + input[type="checkbox"] {
+    box-shadow: 0px 0px 12px rgba(255, 100, 255, 0.8); /* Strong pink glow */
+    border-color: #FF8DFF; /* Brighter pink */
 }
 
 /* ✅ Navigation Links */
@@ -69,13 +86,58 @@
 
 /* ✅ Navigation Links Hover */
 .nav-link:not(.active):hover {
-    color: #A5B4FF; /* Soft Periwinkle */
+    color: #F6A8FF;
+    transform: scale(1.05);
+}
+
+.nav-item input[type="checkbox"]:hover ~ .nav-link:not(.active) {
+    color: #F6A8FF; /* Change color when checkbox is hovered */
     transform: scale(1.05);
 }
 
 /* ✅ Active Section - Strikethrough */
 .nav-link.active {
-    color: #8EA2FF;
+    color: #F6A8FF;
     font-weight: bold;
     text-decoration: line-through;
+}
+
+/* ✅ Navigation Buttons (GitHub & LinkedIn) - Now Always Visible */
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 35vh;
+    padding-top: 20px; /* Space above buttons */
+    padding-bottom: 10px; /* Keep inside viewport */
+}
+
+/* ✅ Small Social Media Buttons */
+.nav-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border: 1px solid rgba(160, 160, 160, 0.5); /* Soft border */
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* ✅ Button Hover Effect */
+.nav-button:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 12px rgba(165, 180, 255, 0.3); /* Soft glow */
+    border-color: #A5B4FF;
+}
+
+/* ✅ Social Media Icons */
+.social-icon {
+    width: 30px;
+    height: 30px;
 }

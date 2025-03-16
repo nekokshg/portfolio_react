@@ -5,10 +5,14 @@ html {
 }
 
 body {
-    color: white;
+    color: #DAD8E6;
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
+}
+
+strong {
+    color: white;
 }
 
 .app-container {
