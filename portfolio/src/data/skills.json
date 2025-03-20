@@ -1,0 +1,6 @@
+{
+    "Programming Languages": ["C++", "C", "C#", "Python", "JavaScript", "HTML", "CSS", "SQL"],
+    "Frameworks & Tools": ["Git", "GitHub", "React", "Node.js", "Express", "Visual Studio Code", "Visual Studio", "Unity"],
+    "Databases": ["MariaDB", "MongoDB"],
+    "Operating Systems": ["Linux", "Windows", "MacOS"]
+}

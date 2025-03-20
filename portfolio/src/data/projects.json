@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Bookworm",
+        "link": "https://github.com/nekokshg/bookworm",
+        "description": "Developed a full-stack book review application using the MERN stack, allowing users to search for, review, and tag books. Implemented features like user authentication, personalized profiles, and a dynamic tagging system to enhance the user experience.",
+        "techStack": ["React", "Node.js", "MongoDB", "Express"],
+        "image": "/images/portfolio.png",
+        "category": "Full-Stack"
+    }
+]

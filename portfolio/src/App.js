@@ -5,7 +5,8 @@ import Navbar from "./components/NavBar";
 import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
-import "./index.css";
+import Experience from "./sections/Experience";
+import "./app.css";
 
 const App = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1020);
@@ -21,6 +22,7 @@ const App = () => {
 
   return (
     <div className="app-container">
+      <div className="scrollBar"></div>
       <FuturisticBackground />
       {/* Show Navbar only on large screens */}
       {!isSmallScreen && <Navbar />}
@@ -31,6 +33,7 @@ const App = () => {
         <About />
         <Skills />
         <Projects />
+        <Experience />
       </div>
     </div>
   );

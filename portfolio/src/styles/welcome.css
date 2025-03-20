@@ -1,9 +1,5 @@
 @import './variables.css';
 
-.welcomeContainer {
-    
-}
-
 .welcomeTitle {
     display: flex;
     justify-content: center;

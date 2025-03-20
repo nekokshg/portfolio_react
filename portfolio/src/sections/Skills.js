@@ -1,15 +1,9 @@
 import React from "react";
 import Section from "../components/Section";
 import "../styles/skills.css";
+import skills from "../data/skills.json";
 
 const Skills = () => {
-    const skills = {
-        "Programming Languages": ["C++", "C", "C#", "Python", "JavaScript", "HTML", "CSS", "SQL"],
-        "Frameworks & Tools": ["Git", "GitHub", "React", "Node.js", "Express", "Visual Studio Code", "Visual Studio", "Unity"],
-        "Databases": ["MariaDB", "MongoDB"],
-        "Operating Systems": ["Linux", "Windows", "MacOS"]
-    };
-
     return (
         <Section id="skills">
             <h3>Technical Skills</h3>

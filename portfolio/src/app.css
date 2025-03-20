@@ -2,6 +2,9 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(200, 150, 255, 0.8) #220054;
 }
 
 body {
@@ -9,23 +12,37 @@ body {
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 
 strong {
     color: white;
 }
 
+h1, h3 {
+    color: white;
+}
+
 .app-container {
-display: flex;
-height: 100vh; /* Ensure it takes full height */
-width: 100vw; /* Ensure it takes full width */
+    display: flex;
+    height: 100vh; /* Ensure it takes full height */
 }
 
 /* ✅ Content now expands to fill the available space */
 .content {
     flex-grow: 1; /* Fills all remaining space */
     margin-left: 80px; /* Matches navbar width */
+    margin-right: 7vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
+
+@media (max-width: 1020px) {
+
+    .content {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+  

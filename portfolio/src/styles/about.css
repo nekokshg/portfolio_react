@@ -1,38 +1,35 @@
-/* ✅ Resume Button - Bordered, No Underline */
 .resume-button {
+    margin-top: 20px;
     display: flex;
     width: fit-content;
     align-items: center;
     gap: 8px;
-    padding: 8px 12px; /* Slightly larger padding for better appearance */
-    font-size: 16px;
+    padding: 8px 12px;
+    font-size: 15px;
     text-align: center;
-    text-decoration: none; /* Removes underline */
+    text-decoration: none;
     color: white;
-    border: 1px solid rgba(160, 160, 160, 0.5); /* Soft border */
-    border-radius: 6px;
+    border: 1px solid rgba(160, 160, 160, 0.5);
+    border-radius: 4px;
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
     transition: color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-/* ✅ Small Clip Icon */
 .button-icon {
     width: 18px;
     height: 18px;
     transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-/* ✅ Hover Effects - No Underline */
 .resume-button:hover {
-    color: #F6A8FF; /* Neon pink */
-    transform: scale(1.05); /* Slight zoom */
-    box-shadow: 2px 2px 12px rgba(165, 180, 255, 0.3); /* Soft glow */
+    color: #F6A8FF;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 12px rgba(165, 180, 255, 0.3);
     border-color: #A5B4FF;
 }
 
-/* ✅ Icon Subtle Hover Effect */
 .resume-button:hover .button-icon {
     opacity: 0.9;
-    transform: scale(1.1); /* Slightly enlarges on hover */
+    transform: scale(1.1);
 }

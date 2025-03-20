@@ -1,31 +1,22 @@
-/* ✅ Section now fills remaining space */
 .section {
-  margin-left: 40vw; /* Push content to the right, making room for navbar */
-  flex-grow: 1; /* Allows the section to expand dynamically */
-  padding-top: 10vh; /* Keeps consistent top spacing */
+  margin-left: 40vw;
+  flex-grow: 1;
+  padding-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-right: 30px;
 }
 
-/* ✅ Last Section - Fills Full Viewport */
 .section:last-of-type {
-  min-height: 100vh; /* Ensures last section fills the entire viewport */
+  min-height: 90vh;
   margin-bottom: 0;
 }
 
-/* ✅ Small screens: Full width sections */
 @media (max-width: 1020px) {
   .section {
       margin-left: 0;
-      width: 100vw;
       min-height: auto;
-      padding-top: 8vh;
-  }
-
-  .section:last-of-type {
-      min-height: 100vh;
+      padding-top: 10vh;
   }
 }
 

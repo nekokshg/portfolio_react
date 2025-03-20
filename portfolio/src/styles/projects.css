@@ -1,13 +1,15 @@
-/* ✅ Projects Container */
 .projects-container {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    padding-left: 80px; /* Space for timeline & dates */
+    gap: 30px;
+    align-items: stretch;
 }
 
-/* ✅ Wrapper for Each Project */
+h4{
+    margin: 0;
+}
+
 .project-wrapper {
     position: relative;
     display: flex;
@@ -15,91 +17,66 @@
     gap: 20px;
 }
 
-/* ✅ Timeline Date - Replaces the Dot */
-.timeline-date {
-    position: absolute;
-    left: 10px; /* Aligns with the timeline */
-    transform: translateX(-95%); /* Centers text over the line */
-    font-size: 15px;
-    font-weight: bold;
-    color: white;/* Darker text for contrast */
-    background-color: rgba(255, 255, 255, .1); /* White background */
-    padding: 6px 10px;
-    border-radius: 4px;
-    border: 1px solid rgba(160, 160, 160, 0.5); /* Soft border */
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-}
-
-/* ✅ Project Card - Text Left, Image Right */
 .project-card {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 25px;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 12px;
-    margin-left: 50px; /* Pushes card away from the timeline */
+    width: 100%;
     border-radius: 4px;
-    border: 1px solid rgba(160, 160, 160, 0.5); /* Soft border */
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border: 1px solid rgba(160, 160, 160, 0.5);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* ✅ Hover Effect */
 .project-card:hover {
     transform: scale(1.05);
-    box-shadow: 2px 2px 12px rgba(165, 180, 255, 0.3); /* Soft glow */
+    box-shadow: 2px 2px 12px rgba(165, 180, 255, 0.3);
     border-color: #A5B4FF;
+    cursor: default;
 }
 
-/* ✅ Project Info (Text on Left) */
 .project-info {
     flex: 1;
     text-align: left;
 }
 
-/* ✅ Project Title (Link) */
 .project-info a {
-    text-decoration: none; /* Removes underline */
-    color: white; /* Default color */
+    text-decoration: none;
+    color: white;
     transition: color 0.3s ease-in-out;
 }
 
-
 .project-card:hover .project-info a {
-    color: #F6A8FF; /* Neon pink */
+    color: #F6A8FF;
 }
 
-/* ✅ Project Description */
 .project-info p {
     font-size: 15px;
-    color: #FFFFFF;
-    margin-bottom: 5px;
 }
 
-/* ✅ Tech Stack - Styled as Bubbles */
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px; /* Space between bubbles */
-    margin-top: 10px;
+    gap: 6px;
+    margin-top: 20px;
 }
 
-/* ✅ Tech Bubble Styling - Vibrant Neon Purple */
 .tech-stack span {
-    background: rgba(190, 100, 255, 0.2); /* Soft translucent purple */
-    color: #F6A8FF; /* Neon purplish-pink for max contrast */
-    font-size: 13px;
-    padding: 6px 12px;
-    border-radius: 20px; /* Makes it pill-shaped */
+    background: rgba(190, 100, 255, 0.2);
+    color: #F6A8FF;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 20px;
     font-weight: bold;
-    border: 1px solid rgba(250, 150, 255, 0.6); /* Brighter border */
+    border: 1px solid rgba(250, 150, 255, 0.6);
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* ✅ Project Image (On Right) */
 .project-image-container {
     display: flex;
     justify-content: center;
@@ -110,4 +87,37 @@
     width: 120px;
     height: auto;
     border-radius: 8px;
+}
+
+.sort-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.sort-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sort-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sort-button.active {
+    background: #F6A8FF;
+    color: #1B0035;
+    font-weight: bold;
+}
+
+@media (max-width: 627px) {
+    .project-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
