@@ -11,10 +11,10 @@ const Home = () => {
             <h3>Software Engineer</h3>
             <p>Passionate about software engineering, game <br></br> development, and digital art.</p>
             <div className="nav-buttons">
-                <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer" className="nav-button">
+                <a href="https://github.com/nekokshg" target="_blank" rel="noopener noreferrer" className="nav-button">
                     <img src={githubIcon} alt="GitHub" className="social-icon" />
                 </a>
-                <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer" className="nav-button">
+                <a href="https://www.linkedin.com/in/nicole-kaneshige-4a3b80216/" target="_blank" rel="noopener noreferrer" className="nav-button">
                     <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
                 </a>
                 <a href="mailto:nicolekaneshige@gmail.com" className="nav-button">
