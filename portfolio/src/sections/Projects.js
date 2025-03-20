@@ -2,9 +2,16 @@ import React, { useState } from "react";
 import Section from "../components/Section";
 import "../styles/projects.css";
 import projects from "../data/projects.json";
+import portfolioImage from "../assets/portfolio.png";
+
 
 const Projects = () => {
     const [selectedCategory, setSelectedCategory] = useState("All");
+
+    const projectImages = {
+        "portfolio.png": portfolioImage,
+    };
+    
 
     const filteredProjects = projects.filter(project => 
         selectedCategory === "All" || project.category === selectedCategory
@@ -45,7 +52,7 @@ const Projects = () => {
                                 </div>
                             </div>
                             <div className="project-image-container">
-                                <img src={`${process.env.PUBLIC_URL}/images/${project.image}`} alt={project.title} className="project-image" />
+                                <img src={projectImages[project.image]} alt={project.title} className="project-image" />
                             </div>
                         </div>
                     </div>
