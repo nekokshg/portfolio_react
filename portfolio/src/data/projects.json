@@ -3,8 +3,16 @@
         "title": "Bookworm",
         "link": "https://github.com/nekokshg/bookworm",
         "description": "Developed a full-stack book review application using the MERN stack, allowing users to search for, review, and tag books. Implemented features like user authentication, personalized profiles, and a dynamic tagging system to enhance the user experience.",
-        "techStack": ["React", "Node.js", "MongoDB", "Express"],
-        "image": "portfolio.png",
+        "techStack": ["React", "Node.js", "MongoDB", "Express", "Git"],
+        "image": "bookworm.png",
         "category": "Full-Stack"
+    },
+    {
+        "title": "Psychic Hustle",
+        "link": "https://github.com/nekokshg/psychic-hustle",
+        "description": "Designed and developed a 2D turn-based RPG in Unity featuring EarthBound-inspired combat and a unique debt-based progression system. Implemented modular battle mechanics, extensible move creation, and stat scaling using ScriptableObjects and C#.",
+        "techStack": ["Aseprite", "C#", "Unity", "MonoBehavior", "ScriptableObjects", "Git"],
+        "image": "psychichustle.png",
+        "category": "Game Development"
     }
 ]

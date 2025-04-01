@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import Section from "../components/Section";
 import "../styles/projects.css";
 import projects from "../data/projects.json";
-import portfolioImage from "../assets/portfolio.png";
+import bookwormImage from "../assets/bookworm.png";
+import psychicHustleImage from "../assets/psychichustle.png";
 
 
 const Projects = () => {
     const [selectedCategory, setSelectedCategory] = useState("All");
 
     const projectImages = {
-        "portfolio.png": portfolioImage,
+        "bookworm.png": bookwormImage,
+        "psychichustle.png" : psychicHustleImage,
     };
     
 
