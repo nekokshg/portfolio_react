@@ -20,7 +20,7 @@ const About = () => {
                     Beyond coding, I have a passion for <strong>game development and digital art</strong>, allowing me to merge creativity 
                     with technology in unique and exciting ways.
                 </p>
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
+                <a href={`${process.env.PUBLIC_URL}/resume.pdf`} target="_blank" rel="noopener noreferrer" className="resume-button">
                     View Resume
                     <img src={downloadIcon} alt="Download Icon" className="button-icon" />
                 </a>
